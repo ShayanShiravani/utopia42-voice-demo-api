@@ -26,6 +26,8 @@ router.post('/join',
     const {verse: roomName, participant: participantName}: 
     { verse: string, participant: string } = req.body
 
+    //TODO: verse validation is required
+
     try {
 
       let room = await getRoom(roomName)
